@@ -1,10 +1,9 @@
-import React, { FormEventHandler, useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import './App.css';
 import "ka-table/style.scss";
-import { Table, useTable, useTableInstance } from 'ka-table';
-import { DataType, EditingMode, SortingMode } from 'ka-table/enums';
+import { Table, useTable } from 'ka-table';
+import { DataType, SortingMode } from 'ka-table/enums';
 import Modal from 'react-modal';
-import { format } from 'date-fns';
 
 const customStyles = {
   content: {
@@ -82,7 +81,6 @@ function App() {
   });
 
   const AddButton = () => {
-    const table = useTableInstance();
     return (
       <div className='plus-cell-button'>
           <img
