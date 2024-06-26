@@ -1,0 +1,11 @@
+CREATE DATABASE db1;
+
+USE db1;
+CREATE TABLE event 
+(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(32),
+  description VARCHAR(255),
+  start_date_UTC DATETIME,
+  end_date_UTC DATETIME
+);
