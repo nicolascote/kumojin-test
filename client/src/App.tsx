@@ -86,7 +86,7 @@ function App() {
     return (
       <div className='plus-cell-button'>
           <img
-              src='src/plus.svg'
+              src='plus.svg'
               alt='Add'
               title='Add'
               onClick={() => openModal()}
